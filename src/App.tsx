@@ -1,9 +1,9 @@
 import "./App.css";
-import TrackingDashboard from "./pages/tracking-page/TrackingDashboard";
+import LogisticsPage from "./pages/logistics-page/Logistics";
 function App() {
   return (
     <>
-      <TrackingDashboard />
+      <LogisticsPage />
     </>
   );
 }
