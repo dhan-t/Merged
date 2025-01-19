@@ -1,10 +1,9 @@
 import "./App.css";
-import Dashboard from "./pages/dashboard-page/Dashboard";
-
+import TrackingDashboard from "./pages/tracking-page/TrackingDashboard";
 function App() {
   return (
     <>
-      <Dashboard />
+      <TrackingDashboard />
     </>
   );
 }
