@@ -51,7 +51,6 @@ function Dashboard() {
         <DashboardHeader />
       </header>
       <div className="dashboard-contents">
-        {" "}
         <div className="bigger-charts">
           <GraphRate />
           <ProgressTable />

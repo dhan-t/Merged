@@ -3,7 +3,7 @@ import "./ReportsPage.css";
 import Header from "./components/Header";
 import ContentWrapper from "./components/ContentWrapper";
 
-const App: React.FC = () => {
+const ReportPage: React.FC = () => {
   return (
     <div className="App">
       <Header />
@@ -12,4 +12,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default ReportPage;

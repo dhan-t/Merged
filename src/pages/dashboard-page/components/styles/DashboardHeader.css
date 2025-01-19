@@ -1,24 +1,24 @@
 .maindiv {
-  height: fit-content;
+  height: fit-content max-content;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  gap: -3rem;
 }
 
 .welcome-message {
   display: flex;
   flex-direction: column;
-  height: fit-content;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  height: fit-content max-content;
 }
 
 .user-greeting {
+  width: max-content;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   opacity: 90%;
-  margin-bottom: -10px;
 }
 
 .current-date {
@@ -30,21 +30,24 @@
 .search-bar {
   display: flex;
   flex: 1;
-  height: 2rem;
+  height: 3rem;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ccc; /* Light gray border */
+  border: 1px solid white; /* Light gray border */
   border-radius: 4px;
   padding: 5px 10px;
-  background-color: #f8f8f8;
+  background-color: white;
 }
 
 .searchbar-button {
   background-color: transparent;
   cursor: pointer;
   width: 3rem;
-  text-align: center;
-  align-content: center;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -53,9 +56,11 @@
   border: none;
   outline: none;
   font-size: 1rem;
+  background-color: transparent;
 }
 
 .input-field {
+  color: #858d9d;
   display: flex;
   height: 100%;
   font-size: 1rem;
@@ -66,16 +71,19 @@
   background-color: #f8f8f8;
 }
 
-.notification-btn {
+.notif-btn-holder {
   width: 2rem;
   height: 2rem;
-  font-size: 1rem;
+}
+
+.notification-btn {
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 2rem;
   border: transparent;
   cursor: pointer;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-section {
@@ -83,7 +91,7 @@
   flex-direction: row;
   align-items: center;
   text-align: center;
-  padding-right: 1rem;
+  gap: 1rem;
 }
 
 .profile-picture {
@@ -91,18 +99,17 @@
   height: 50px;
   border-radius: 50%;
   background-color: #ccc;
-  margin-right: 1rem;
 }
 
 .profile-texts {
   height: fit-content;
   text-align: start;
 }
+
 .username-display {
   font-weight: bold;
   font-size: 1rem;
   opacity: 90%;
-  margin-bottom: -1rem;
 }
 
 .user-position {

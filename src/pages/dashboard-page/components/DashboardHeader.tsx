@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IconButton } from "@mui/material";
 import "./styles/DashboardHeader.css";
 import { FaBell, FaMagnifyingGlass } from "react-icons/fa6";
 
@@ -12,7 +13,7 @@ function DashboardHeader() {
   return (
     <div className="maindiv">
       <div className="welcome-message">
-        <p className="user-greeting">Welcome, User!</p>
+        <p className="user-greeting">Welcome, Userdsadadadadaad!</p>
         <p className="current-date">Today is January 2025</p>
       </div>
 
@@ -29,9 +30,12 @@ function DashboardHeader() {
         </button>
       </div>
 
-      <button className="notification-btn">
-        <FaBell />
-      </button>
+      <div className="notif-btn-holder">
+        {" "}
+        <button className="notification-btn">
+          <FaBell />
+        </button>
+      </div>
 
       <div className="profile-section">
         <div className="profile-picture" />
